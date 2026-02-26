@@ -76,8 +76,8 @@ public class Image2Map implements ModInitializer {
     @Override
     public void onInitialize() {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-            dispatcher.register(literal("image2map")
-                    .requires(Permissions.require("image2map.use", CONFIG.minPermLevel))
+            dispatcher.register(literal("helloooooo")
+                    .requires(Permissions.require("essentials.tpa", CONFIG.minPermLevel))
                     .then(literal("create")
                             .requires(Permissions.require("image2map.create", 0))
                             .then(argument("width", IntegerArgumentType.integer(1, CONFIG.maxSize))
